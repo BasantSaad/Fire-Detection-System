@@ -1,4 +1,4 @@
-# Fire Detection System
+# Fire Detection System 🔥
 
 A computer vision–based fire detection solution using a camera, designed for edge devices like Raspberry Pi. This project integrates with ESP32 for sending and reading data via Blynk, allowing real-time user notifications and remote monitoring.
 
