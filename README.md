@@ -35,11 +35,11 @@ Fire-Detection-System/
 
 │── esp32/ # ESP32 code for sensors & cloud integration
 
-│── raspberrypi/ # Raspberry Pi scripts for camera + ML inference
+│── testaya.ion/ # Raspberry Pi scripts for camera + ML inference
 
 │── models/ # Saved ML models
 
-│── data/ # Sample dataset (or link to dataset)
+│── data/ # Sample dataset [(or link to dataset](https://www.kaggle.com/datasets/basantsaad/fire-detection-image-dataset))
 
 │── requirements.txt # Python dependencies
 
@@ -64,8 +64,6 @@ Fire-Detection-System/
 2. Install dependencies:
   ```bash
   pip install -r requirements.txt
-
----
 
 4. Open the Jupyter Notebook to train/test the fire detection CNN.
 5. Upload ESP32/RPi scripts to your board and configure your Wi-Fi + Blynk credentials.
