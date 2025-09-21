@@ -31,38 +31,37 @@ while True:
         result = model.predict(model_input)
         print("Model Prediction:", result)
         time.sleep(2)
-        if result[0]==1:
-            print('yes')
+        if result[0]==0:
+            print('Fire Detected')
             device = torch.device('cpu')
             model = models.resnet18(pretrained=False)
             num_ftrs = model.fc.in_features
-            model.fc = nn.Linear(num_ftrs, 2)  # عدد الكلاسات
-            model.load_state_dict(torch.load('/home/pi/Desktop/best_model.pth', map_location=device))
+            model.fc = nn.Linear(num_ftrs, 2)  #num of classes
+            model.load_state_dict(torch.load('/home/pi/Desktop/Fire_detection_model.pth', map_location=device))
             model.to(device)
             model.eval()
 
-            # التحويلات المطلوبة للصورة
             transform = transforms.Compose([
-                transforms.Resize((224, 224)),  # حجم الإدخال
+                transforms.Resize((224, 224)),  
                 transforms.ToTensor(),
                 transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                     std=[0.229, 0.224, 0.225])
             ])
 
-            # فتح الكاميرا USB (عادةً رقمها 0، لو مش شغالة جربي 1)
+            #open the camera
             cap = cv2.VideoCapture(0)
 
             if not cap.isOpened():
-                print("❌ فشل في فتح الكاميرا. تأكدي إنها متوصلة.")
+                print("❌ fail in camera opening")
                 exit()
 
             while True:
                 ret, frame = cap.read()
                 if not ret:         
-                    print("❌ لم يتم التقاط صورة من الكاميرا.")
+                    print("❌ there is no image that taken")
                     break
                 
-                # تحويل صورة OpenCV إلى PIL
+                # PIL to opencv
                 img = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
                 input_tensor = transform(img).unsqueeze(0).to(device)
                 
@@ -74,17 +73,17 @@ while True:
                 label = predicted.item()
                 conf = confidence.item()
 
-                # عرض النتيجة على الصورة
+
                 text = f'Class: {label} Conf: {conf:.2f}'
                 cv2.putText(frame, text, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 
                             1, (0, 255, 0), 2, cv2.LINE_AA)
                 
                 cv2.imshow('Real-time Prediction', frame)
 
-                # لو المستخدم ضغط "q" بيقفل
                 if cv2.waitKey(1) & 0xFF == ord('q'):
                     break
     except Exception as e: 
         print("Error:", e)
         time.sleep(5)
+
 
