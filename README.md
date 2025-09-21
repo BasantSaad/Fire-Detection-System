@@ -22,7 +22,7 @@ This approach reduces false alarms by integrating **IoT + Machine Learning + Com
 ## 🛠️ Technologies Used
 - **Hardware**: ESP32, Raspberry Pi, Temperature & Gas sensors, Camera Module  
 - **Programming**: Python, Arduino IDE  
-- **Machine Learning**: TensorFlow / PyTorch (CNN for fire detection)  
+- **Machine Learning**: PyTorch (CNN for fire detection)  
 - **Cloud & IoT**: Blynk Cloud, MQTT (optional)  
 - **Notebooks**: Jupyter Notebook for training and testing models  
 
