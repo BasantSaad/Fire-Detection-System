@@ -6,8 +6,8 @@
 #include <BlynkSimpleEsp32.h>
 #include <DHT.h>
 
-char ssid[] = "Hm";
-char pass[] = "1q2w3e4r5t";
+char ssid[] = "XX";
+char pass[] = "XXXXXXXXXX";
 
 #define DHTPIN 4
 #define DHTTYPE DHT11
