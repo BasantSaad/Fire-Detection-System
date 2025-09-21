@@ -1,0 +1,19 @@
+# Core Python libraries
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+
+# Deep Learning (PyTorch)
+torch
+torchvision
+torchaudio
+
+# Jupyter & Utilities
+jupyter
+notebook
+opencv-python
+
+# IoT/Cloud (for Raspberry Pi integration)
+blynklib
