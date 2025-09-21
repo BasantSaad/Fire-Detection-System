@@ -31,19 +31,23 @@ This approach reduces false alarms by integrating **IoT + Machine Learning + Com
 ## 📂 Repository Structure
 Fire-Detection-System/
 
-│── notebooks/ # Model training & evaluation
+│──fire-detection-by-co2-and-temperature.ipynb/ # ML Model training & evaluation
 
-│── esp32/ # ESP32 code for sensors & cloud integration
+│──firedetectioncnn.ipynb/ # CNN Model training & evaluation
 
-│── testaya.ion/ # Raspberry Pi scripts for camera + ML inference
+│── **models** # Saved ML models
 
-│── models/ # Saved ML models
+│── esp32.ino/ # ESP32 code for sensors & cloud integration
 
-│── data/ # Sample dataset [(or link to dataset](https://www.kaggle.com/datasets/basantsaad/fire-detection-image-dataset))
+│── testaya.py/ # Raspberry Pi scripts for camera + ML inference
 
 │── requirements.txt # Python dependencies
 
 │── README.md # Project documentation
+
+│── smoke_detection_iot.csv # Structure dataset
+
+│── **image_data** # Sample dataset [(link to dataset](https://www.kaggle.com/datasets/basantsaad/fire-detection-image-dataset))
 
 ---
 
@@ -68,7 +72,7 @@ Fire-Detection-System/
 4. Open the Jupyter Notebook to train/test the fire detection CNN.
 5. Upload ESP32/RPi scripts to your board and configure your Wi-Fi + Blynk credentials.
 ---
-## 📊 Demo Workflow
+##  Demo Workflow
 
 1. Sensors detect abnormal gas/temperature levels
 2. Camera module activates
