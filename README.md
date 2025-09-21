@@ -30,6 +30,7 @@ This approach reduces false alarms by integrating **IoT + Machine Learning + Com
 
 ## 📂 Repository Structure
 Fire-Detection-System/
+
 │── notebooks/ # Model training & evaluation
 
 │── esp32/ # ESP32 code for sensors & cloud integration
