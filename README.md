@@ -15,7 +15,8 @@ A computer vision–based fire detection solution using a camera, designed for e
 
 - Raspberry Pi (any modern version)
 - ESP32 microcontroller
-- Camera module compatible with Raspberry Pi
+- Temperture Sensor , Gas Sensor (for first stage prediction)
+- Camera module compatible with Raspberry Pi (I used My mobile , conneted by IP webcam app )
 - Blynk account and app (for notifications)
 - Python, OpenCV, and required libraries
 
