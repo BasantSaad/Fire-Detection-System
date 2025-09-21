@@ -31,11 +31,17 @@ This approach reduces false alarms by integrating **IoT + Machine Learning + Com
 ## 📂 Repository Structure
 Fire-Detection-System/
 │── notebooks/ # Model training & evaluation
+
 │── esp32/ # ESP32 code for sensors & cloud integration
+
 │── raspberrypi/ # Raspberry Pi scripts for camera + ML inference
+
 │── models/ # Saved ML models
+
 │── data/ # Sample dataset (or link to dataset)
+
 │── requirements.txt # Python dependencies
+
 │── README.md # Project documentation
 
 ---
