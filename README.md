@@ -4,10 +4,10 @@ A computer vision–based fire detection solution using a camera, designed for e
 
 ## Features
 
-- **CV Model for Fire Detection**: Utilizes a trained computer vision model to detect fire from live camera feeds.
-- **ESP32 Integration**: Sends detection data and alerts using Blynk, enabling remote user notifications.
+- **CV Model for Fire Detection(firedetectioncnn.ipynb)**: Utilizes a trained computer vision model to detect fire from live camera feeds.
+- **ESP32 Integration(esp32.ino)**: Sends detection data and alerts using Blynk, enabling remote user notifications.
 - **Raspberry Pi Deployment**: Optimized to run on Raspberry Pi for real-world applications.
-- **Test Scripts**: Includes scripts for testing and verifying system functionality on Raspberry Pi.
+- **Test Scripts(testaya.py)**: Includes scripts for testing and verifying system functionality on Raspberry Pi.
 
 ## Getting Started
 
