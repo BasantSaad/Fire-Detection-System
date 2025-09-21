@@ -68,7 +68,7 @@ Fire-Detection-System/
 2. Install dependencies:
   ```bash
   pip install -r requirements.txt
-
+  ```
 4. Open the Jupyter Notebook to train/test the fire detection CNN.
 5. Upload ESP32/RPi scripts to your board and configure your Wi-Fi + Blynk credentials.
 ---
