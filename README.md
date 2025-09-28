@@ -35,7 +35,7 @@ Fire-Detection-System/
 
 │──firedetectioncnn.ipynb/ # CNN Model training & evaluation
 
-   │── **models** # Saved ML models [(link to RandomForest Model Using Sensors](https://www.kaggle.com/code/basantsaad/fire-detection-by-co2-and-temperature-sensors))  [(link to CNN Fire Detection Model](https://www.kaggle.com/code/basantsaad/fire-detection-cnn-model))
+   │── **models** # Saved ML models [(link to RandomForest Model Using Sensors](https://www.kaggle.com/code/basantsaad/fire-detection-by-co2-and-temperature-sensors)) , [(link to CNN Fire Detection Model](https://www.kaggle.com/code/basantsaad/fire-detection-cnn-model))
 
 │── esp32.ino/ # ESP32 code for sensors & cloud integration
 
