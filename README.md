@@ -9,7 +9,8 @@ This approach reduces false alarms by integrating **IoT + Machine Learning + Com
 
 
 **([Video of the project in action](https://drive.google.com/file/d/1AxPv5oxLh1cpRJmtE860qzvB0xWN_V5t/view?usp=sharing))**
-![Alt Text](Internal connections.png)
+
+![Alt Text](Internal%20connections.png)
 
 ---
 
